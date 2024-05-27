@@ -7,6 +7,7 @@ public class Player : MonoBehaviour
 {
     public PlayerContorller contorller;
     public PlayerCondition condition;
+    public Equipment equip;
 
     public ItemData itemData;
     public Action addItem;
@@ -17,5 +18,6 @@ public class Player : MonoBehaviour
         CharacterManager.Instance.Player = this;
         contorller = GetComponent<PlayerContorller>();
         condition = GetComponent<PlayerCondition>();
+        equip = GetComponent<Equipment>();
     }
 }
